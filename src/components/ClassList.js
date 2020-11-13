@@ -1,7 +1,7 @@
 import React from 'react';
 import Class from './Class';
 
-const ClassList = ({ classes }) => {
+const ClassList = ( { classes } ) => {
     return (
         <div>
             {
@@ -11,8 +11,7 @@ const ClassList = ({ classes }) => {
                                 key={i} 
                                 id={classes[i].id} 
                                 name={classes[i].name} 
-                                url={classes[i].url}
-                                power_type={classes[i].power_type}
+                                email={classes[i].email}
                                 />
                         );
                     })
